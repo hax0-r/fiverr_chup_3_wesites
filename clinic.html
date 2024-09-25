@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Docs/Assets/global/favIcon.svg" type="image/x-icon">
+    <title>Chup! Hospital</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Clinic-Docs/Style/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="bg-[#ffffff]">
+        <div class="flex h-24 lg:px-16 md:px-8 px-4 items-center justify-between mx-auto">
+            <a href="/index.html">
+                <img src="/Clinic-Docs/Assets/logo.svg" alt="logo" class="md:h-[64px] h-[35px]">
+            </a>
+            <button
+                class="navBtn flex text-nowrap text-[#ffffff] px-6 py-2.5 md:w-[200px] w-[130px] md:h-[52px] h-[32] transition-all items-center justify-center md:gap-2 gap-1 font-medium md:text-[16px] text-[12px]">
+                <img src="/Clinic-Docs/Assets/whatsapp.svg" class="md:h-[20px] h-[16.67px] font-semibold " alt="">
+                WhatsApp Us
+            </button>
+        </div>
+    </nav>
+
+    <div
+        class="heroSection md:flex hidden flex-col px-5 py-16 items-center justify-center w-full bg-[#ffffff] relative ">
+        <img src="/Clinic-Docs/Assets/herobgrighgt.png" class="absolute right-0 max-h-[683.42px] top-0" alt="">
+        <img src="/Clinic-Docs/Assets/herobgleft.png" class="absolute left-0 max-h-[789.24px] bottom-0" alt="">
+        <h1
+            class="font-bold md:text-[72px] text-[31px] text-center uppercase md:flex flex-col sm:w-auto w-[327px] items-center justify-center md:leading-[104px] leading-[39px] text-[#1D1D1D]">
+            <span class="slidein [--slidein-delay:300ms] opacity-0 h1Top text-white md:px-20 mb-2">Modern clinics
+                need</span>
+            <span class="slidein [--slidein-delay:400ms] opacity-0 h1Top text-white md:px-10"> modern solutions —</span>
+            <span class="slidein [--slidein-delay:400ms] opacity-0"> Experience the most</span>
+            <span class="slidein [--slidein-delay:500ms] opacity-0">
+                <span
+                    class="bg-gradient-to-r from-[#fa5a5b] to-[#f66383] inline-block text-transparent bg-clip-text">comprehensive
+                </span>
+                clinic
+            </span>
+            <span class="slidein [--slidein-delay:600ms] opacity-0">management system with</span>
+        </h1>
+        <img src="/Clinic-Docs/Assets/mainLogo.svg" class="mx-auto mt-6 md:max-w-[500px] max-w-[180px] w-full" alt="">
+    </div>
+    <div
+        class="heroSection md:hidden flex flex-col px-5 py-16  items-center justify-center w-full bg-[#ffffff] relative">
+        <img src="/Clinic-Docs/Assets/herobgrighgt.png" class="absolute right-0 max-h-[257.33px] top-0" alt="">
+        <img src="/Clinic-Docs/Assets/herobgrighgtres.png" class="absolute left-0 max-h-[543.29px] bottom-0" alt="">
+        <h1
+            class="font-bold md:text-[72px] text-[31px] text-center uppercase   flex flex-col sm:w-auto w-[327px] items-center justify-center md:leading-[104px] leading-[39px] text-[#1D1D1D] gap-1.5">
+            <span class="slidein [--slidein-delay:300ms] opacity-0 h1Top text-white px-3 py-0.5">Modern clinics </span>
+            <span class="slidein [--slidein-delay:400ms] opacity-0 h1Top text-white px-3 py-0.5">need modern </span>
+            <span class="slidein [--slidein-delay:400ms] opacity-0 h1Top text-white px-3 py-0.5">solutions —</span>
+            <span class="slidein [--slidein-delay:400ms] opacity-0 h1Top text-white px-3 py-0.5">Experience the </span>
+            <span class="slidein [--slidein-delay:400ms] opacity-0"> most</span>
+            <span
+                class="bg-gradient-to-r from-[#fa5a5b] to-[#f66383] inline-block text-transparent bg-clip-text">comprehensive
+            </span>
+            <span class="slidein [--slidein-delay:500ms] opacity-0"> clinic</span>
+            <span class="slidein [--slidein-delay:600ms] opacity-0">management </span>
+            <span class="slidein [--slidein-delay:600ms] opacity-0">system with</span>
+        </h1>
+        <img src="/Clinic-Docs/Assets/mainLogo.svg" class="mx-auto mt-5 md:max-w-[500px] max-w-[180px] w-full" alt="">
+    </div>
+
+    <div class="bg-[#F4F8FB] p-5 relative">
+        <img src="/Clinic-Docs/Assets/rounded.png" class="absolute bottom-0 right-0 lg:block hidden" alt="">
+        <img src="/Clinic-Docs/Assets/resRounded.png" class="absolute top-10 right-0 lg:hidden" alt="">
+
+        <div
+            class="max-w-[1200px] mx-auto w-full flex items-center lg:flex-row flex-col-reverse justify-between relative md:py-16 py-10">
+
+            <div class="max-w-[790px] w-full flex flex-col gap-4 ">
+                <h1
+                    class="bg-gradient-to-r from-[#60AEF8] lg:mt-0 pt-10 via-[#F46692] to-[#F3A562]400 inline-block text-transparent bg-clip-text md:text-[52px] text-[32px] leading-tight font-bold">
+                    From Registration to Check Out. </h1>
+                <p class="md:text-[24px] text-[25px] Inter text-[#000000BF]">Our solution is custom-built for
+                    registration, appointments, queues, EMR, insurance, triage, consultations, pharmacy, inventory,
+                    billing, and check-out. It also includes a marketing creation module and analytics dashboard.</p>
+
+                <button
+                    class="navBtn flex text-nowrap lg:mt-4 text-[#F1E4DA] px-6 lg:py-2.5 py-3 md:w-[247px] w-full md:h-[52px] h-[32] transition-all items-center justify-center  gap-3 font-semibold text-[22px] ">
+                    <img src="/Clinic-Docs/Assets/whatsapp.svg" class="h-[26px]  " alt="">
+                    WhatsApp Us
+                </button>
+            </div>
+
+            <div class="md:max-w-[500px] max-w-[189.5px] w-full">
+                <img src="/Clinic-Docs/Assets/registration.png" class="w-full" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="bg-[#000000] md:pt-10 pt-5">
+        <div class=" relative py-5">
+            <div class="md:pt-10 p-5 relative">
+                <img src="/Hospital-Docs/Assets/global/pinkbg1.png"
+                    class="absolute rotate-180 -bottom-72 left-0 max-w-[300px] w-full " alt="">
+
+
+                <div class="max-w-[1200px] w-full mx-auto z-20">
+                    <h2 class="text-[#ffffff] md:text-[42px] font-medium relative text-[30px] leading-tight ">Clinic
+                        operations feeling overwhelming?</h2>
+                </div>
+
+                <div
+                    class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-0 pt-10 pb-5   myShadow md:text-[36px] text-[26px] text-[#2F3733] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col justify-between md:gap-2 gap-5">
+
+                    <p class="max-w-[772.62px] w-full z-30 Inter "><span class="font-bold Inter">ChupClinic’s</span>
+                        AI-powered <span class="font-bold Inter">automation and optimized</span> workflows streamline
+                        management, allowing you to focus on what matters—patient care.</p>
+                    <div class="md:max-w-[275.38px] max-w-[217px] w-full md:-mr-0 -mr-20">
+                        <img src="/Hospital-Docs/Assets/global/section31.png" class=" w-full" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" relative py-5 ">
+            <div class="p-5 relative">
+                <img src="/Hospital-Docs/Assets/global/pinkbg1.png"
+                    class="absolute rotate-180 -bottom-72 left-0 max-w-[300px] w-full " alt="">
+
+
+                <div class="max-w-[1200px] w-full mx-auto z-20">
+                    <h2 class="text-[#ffffff] md:text-[42px] font-medium relative text-[30px] leading-tight ">Struggling
+                        to keep your clinic's marketing fresh?</h2>
+                </div>
+
+                <div
+                    class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-0 pt-10 pb-5   myShadow md:text-[36px] text-[26px] text-[#2F3733] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col justify-between md:gap-2 gap-5">
+
+                    <p class="max-w-[772.62px] w-full z-30 Inter ">
+                        <span class="font-bold Inter">ChupClinic's marketing</span> tools make it easy to create and customize content, boosting <span class="font-bold Inter">your
+                            clinic's visibility and engagement</span>.
+                    </p>
+                    <div class="md:max-w-[275.38px] max-w-[217px] w-full md:-mr-0 -mr-20">
+                        <img src="/Hospital-Docs/Assets/global/section31.png" class=" w-full" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class=" relative py-5 ">
+            <div class="p-5 relative">
+
+                <div class="max-w-[1200px] w-full mx-auto z-20">
+                    <h2 class="text-[#ffffff] md:text-[42px] font-medium relative text-[30px] leading-tight ">Finding it hard to manage patient records efficiently?</h2>
+                </div>
+
+                <div
+                    class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-0 pt-10 pb-5   myShadow md:text-[36px] text-[26px] text-[#2F3733] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col justify-between md:gap-2 gap-5">
+
+                    <p class="max-w-[772.62px] w-full z-30 Inter ">
+                            ChupClinic's EMR system streamlines patient care by <span class="font-bold Inter">centralizing data, enhancing security, and improving efficiency</span>.
+                    </p>
+                    <div class="md:max-w-[275.38px] max-w-[217px] w-full md:-mr-0 -mr-20">
+                        <img src="/Hospital-Docs/Assets/global/section31.png" class=" w-full" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="bg-[#115934] md:px-10 md:py-7 px-5 py-7 flex items-center justify-between gap-5 ">
+        <img src="/Docs/Assets/global/footerLogo.svg" class="md:max-w-[132.5px] max-w-[88px] w-full" alt="">
+        <p class="text-white font-medium md:text-[14px] text-[10px]">© 2024 Chup Online Sdn Bhd. All rights reserved.
+        </p>
+    </div> -->
+
+</body>
+
+<script src=" https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('accordion', {
+            tab: 0
+        });
+
+        Alpine.data('accordion', (idx) => ({
+            init() {
+                this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    })
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
+</script>
+
+</html>

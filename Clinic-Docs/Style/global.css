@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.Urbanist {
-    font-family: "Urbanist", system-ui;
+.Inter {
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -126,4 +126,22 @@ button {
     .heroSection {
         min-height: calc(100vh - 6rem);
     }
+}
+
+/* ===================== */
+
+.navBtn {
+    border-radius: 12px;
+    background: linear-gradient(100.89deg, rgb(250, 88, 83) 0.389%, rgb(244, 102, 146) 84.423%, rgb(255, 196, 68) 102.869%);
+}
+
+@media screen and (min-width:768px) {
+    .heroSection {
+        min-height: calc(100vh - 64px);
+    }
+}
+
+.h1Top {
+    border-radius: 12px;
+    background: linear-gradient(100.89deg, rgb(250, 88, 83) 0.046%, rgb(244, 102, 146) 84.868%, rgb(255, 196, 68) 103.488%);
 }
