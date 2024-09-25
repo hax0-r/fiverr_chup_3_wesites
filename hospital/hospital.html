@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/hospital/Docs/Assets/global/favIcon.svg" type="image/x-icon">
+    <title>Chup! Hospital</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/hospital/Docs/Style/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="bg-[#f8f8f8]">
+        <div class="flex h-24 lg:px-16 md:px-8 px-4 items-center justify-between mx-auto">
+            <a href="/index.html">
+                <img src="/hospital/Docs/Assets/global/Logo.svg" alt="logo" class="md:h-[58px] h-[34px]">
+            </a>
+            <button
+                class="bg-[#F26522] flex text-nowrap text-[#ffffff] px-6 py-2.5 md:w-[210px] w-[143px] md:h-[58px] h-[40] rounded-lg transition-all items-center justify-center gap-2 font-medium md:text-[20px] text-[14px]">
+                <img src="/hospital/Docs/Assets/global/whatsapp.svg" class="md:h-[20px] h-[16.67px] font-semibold "
+                    alt="">
+                WhatsApp Us
+            </button>
+        </div>
+    </nav>
+
+    <div class="bg-[#f8f8f8] overflow-hidden relative flex justify-center items-center">
+
+        <div class="absolute max-w-[279.49px] w-full left-0 ">
+            <img src="/hospital/Docs/Assets/global/herobg1.png" class="w-full" alt="">
+        </div>
+        <div class="absolute max-w-[279.49px] w-full right-0 ">
+            <img src="/hospital/Docs/Assets/global/herobg2.png" class="w-full" alt="">
+        </div>
+
+        <div
+            class="heroSection w-full flex flex-col z-10 px-5  py-16 items-center justify-center max-w-[908px] mx-auto relative">
+
+
+            <h1
+                class="font-bold md:text-[80px] text-3xl uppercase text-center md:flex relative flex-col items-center justify-center md:leading-[104px] leading-[39px] text-[#115934]">
+                Manage it all with
+                <img src="/hospital/Docs/Assets/global/star.svg"
+                    class="absolute md:-top-16 -top-5 md:-left-28 -left-5 md:h-[56px] h-[25px] " alt="">
+                <img src="/hospital/Docs/Assets/global/star.svg"
+                    class="absolute md:-bottom-16 -bottom-12 md:-right-28 -right-5 md:h-[56px] h-[25px]" alt="">
+            </h1>
+            <div class="flex items-center justify-center flex-col md:max-w-[415.22px] max-w-[271px] w-full gap-2">
+                <img src="/hospital/Docs/Assets/global/mainLogo.svg" class="w-full" alt="">
+                <img src="/hospital/Docs/Assets/global/underLine.svg" class="max-w-[353px] w-full" alt="">
+            </div>
+            <p class="lg:text-[38px] md:text-[20px] text-[14px] text-center md:pt-7 pt-4 Urbanist">ChupHospital is a
+                next-gen, comprehensive SaaS hospital information system with more than 30+ modules</p>
+
+            <div class="md:max-w-[607.05px] max-w-[271px] md:mt-24 mt-8 w-full">
+                <img src="/hospital/Docs/Assets/global/heroImg.png" class="w-full" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="md:py-16 py-5 bg-[#f8f8f8] p-5 relative">
+
+        <img src="/hospital/Docs/Assets/global/section2Bg.png" class="absolute bottom-0 left-0 max-w-[220px] w-full"
+            alt="">
+        <img src="/hospital/Docs/Assets/global/section2Bg2.png" class="absolute bottom-0 right-0 max-w-[220px] w-full"
+            alt="">
+
+        <div class="max-w-[1309px] z-10 mb-5 text-[#02020280] w-full mx-auto flex items-center justify-between ">
+            <h2>+</h2>
+            <h2>+</h2>
+        </div>
+
+        <div
+            class="max-w-[1200px] z-10 w-full mx-auto md:p-20 myShadow p-5 md:text-[38px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl ">
+            <div class=" items-center gap-5 Urbanist sm:flex hidden">
+                <img src="/hospital/Docs/Assets/global/mainLogo.svg" class="md:max-w-[315.72px] max-w-[150px] w-full"
+                    alt="">
+                streamlines hospital operations and
+            </div>
+            <div class="flex sm:hidden items-center gap-3 Urbanist">
+                <img src="/hospital/Docs/Assets/global/mainLogo.svg" class="md:max-w-[315.72px] max-w-[150px] w-full"
+                    alt="">
+                streamlines
+            </div>
+            <span class="sm:hidden Urbanist"> hospital operations and</span>
+            enhance patient care. It reduces the need for multiple systems, <span class="font-bold Urbanist">cuts
+                wait times</span>, and <span class="font-bold Urbanist">minimizes administrative errors</span>. With
+            <span class="font-bold Urbanist">AI-powered tools</span> and a <span class="font-bold Urbanist">dynamic
+                virtual queue</span>, it's
+            easy to use and requires no downloads, boosting efficiency and <span class="font-bold Urbanist">cutting
+                costs across healthcare settings</span>.
+
+            <button
+                class="bg-[#F26522] mx-auto sm:mt-10 mt-5 flex text-nowrap text-[#ffffff] font-semibold px-6 py-2.5 md:w-[373px] w-full  h-[58px] sm:rounded-lg rounded-full transition-all items-center justify-center gap-2 md:text-[20px] text-[16px]">
+                <img src="/hospital/Docs/Assets/global/whatsapp.svg" class="md:h-[20px] h-[26px] font-semibold " alt="">
+                Ask Us Anything on WhatsApp
+            </button>
+        </div>
+        <div class="max-w-[1309px] z-10 mt-5 text-[#02020280] w-full mx-auto flex items-center justify-between ">
+            <h2>+</h2>
+            <h2>+</h2>
+        </div>
+    </div>
+
+    <div class="bg-[#ffffff] relative md:py-10 py-5 md:pb-24 pb-14">
+
+        <div class="bg-[#f8f8f8] w-full h-20 absolute top-0 left-0"></div>
+        <div class="bg-[#f8f8f8] w-full h-52 absolute bottom-0 left-0"></div>
+
+        <div class="md:py-16 py-10 bg-[#ffffff] md:rounded-t-[4rem] rounded-t-[3rem] p-5 relative">
+            <img src="/hospital/Docs/Assets/global/bluebg1.png" class="absolute top-10 left-0 max-w-[350px] w-full "
+                alt="">
+            <img src="/hospital/Docs/Assets/global/pinkbg1.png"
+                class="absolute -bottom-72 right-0 max-w-[300px] w-full " alt="">
+            <div class="max-w-[1200px] w-full mx-auto z-20">
+                <h2 class="text-[#115934] md:text-[50px] relative text-[26px] leading-tight ">Are meal orders in your
+                    hospital
+                    causing delays and miscommunication?</h2>
+            </div>
+            <div
+                class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-10  myShadow md:text-[36px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col-reverse justify-between md:gap-2 gap-10">
+
+                <p class="max-w-[612px] w-full z-30">Our Dietary Management feature <span
+                        class="font-bold Urbanist">simplifies meal orders</span> through a
+                    portal
+                    and WhatsApp, allowing staff to track and <span class="font-bold Urbanist">manage requests
+                        efficiently, reducing manual tasks</span> and
+                    enhancing patient satisfaction.</p>
+                <img src="/hospital/Docs/Assets/global/section3.png" class="max-w-[388.88px] w-full" alt="">
+            </div>
+        </div>
+
+
+        <div class="md:pt-10 p-5 relative">
+            <img src="/hospital/Docs/Assets/global/pinkbg1.png"
+                class="absolute rotate-180 -bottom-72 left-0 max-w-[300px] w-full " alt="">
+
+
+            <div class="max-w-[1200px] w-full mx-auto z-20">
+                <h2 class="text-[#115934] md:text-[50px] relative text-[26px] leading-tight ">Struggling to manage
+                    medical supplies and non-medical items across departments?</h2>
+            </div>
+
+            <div
+                class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-10  myShadow md:text-[36px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col-reverse justify-between md:gap-2 gap-10">
+
+                <p class="max-w-[612px] w-full z-30">With Inventory Management, you can smoothly manage inbound and
+                    outbound processes, <span class="font-bold Urbanist">ensuring timely access to essential supplies
+                        across all departments</span>.</p>
+                <img src="/hospital/Docs/Assets/global/section31.png" class="max-w-[388.88px] w-full" alt="">
+
+            </div>
+
+        </div>
+
+
+        <div class="md:pt-10 p-5 relative">
+            <img src="/hospital/Docs/Assets/global/bluebg1.png"
+                class="absolute bottom-20 rotate-180 right-0 max-w-[300px] w-full " alt="">
+
+
+            <div class="max-w-[1200px] w-full mx-auto z-20">
+                <h2 class="text-[#115934] md:text-[50px] relative text-[26px] leading-tight ">Is scheduling and managing
+                    staff a time-consuming task in your hospital?</h2>
+            </div>
+
+            <div
+                class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-10  myShadow md:text-[36px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col-reverse justify-between md:gap-2 gap-10">
+
+                <p class="max-w-[612px] w-full z-30">Our Human Resource feature helps manage <span
+                        class="font-bold Urbanist">staff scheduling</span> and rosters with ease, <span
+                        class="font-bold Urbanist">reducing administrative effort</span> and ensuring proper staff
+                    distribution.</p>
+                <img src="/hospital/Docs/Assets/global/section32.png" class="max-w-[388.88px] w-full" alt="">
+
+            </div>
+
+        </div>
+
+
+        <div class="md:pt-10 p-5 relative">
+            <img src="/hospital/Docs/Assets/global/bluebg1.png" class="absolute left-0 top-0 max-w-[300px] w-full "
+                alt="">
+            <img src="/hospital/Docs/Assets/global/pinkbg1.png"
+                class="absolute right-0 -bottom-20 max-w-[300px] w-full " alt="">
+
+
+            <div class="max-w-[1200px] w-full mx-auto z-20">
+                <h2 class="text-[#115934] md:text-[50px] relative text-[26px] leading-tight ">Does your hospital
+                    struggle to track procurement contracts and vendor deadlines?</h2>
+            </div>
+
+            <div
+                class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-10  myShadow md:text-[36px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col-reverse justify-between md:gap-2 gap-10">
+
+                <p class="max-w-[612px] w-full z-30">Our Contract Management module streamlines procurement by <span
+                        class="font-bold Urbanist">tracking statuses and deadlines</span>, ensuring vendor transparency
+                    and compliance, while <span class="font-bold Urbanist">reducing administrative tasks</span>.</p>
+                <img src="/hospital/Docs/Assets/global/section33.png" class="max-w-[388.88px] w-full" alt="">
+
+            </div>
+
+        </div>
+
+
+        <div class="md:pt-10 p-5 relative">
+            <img src="/hospital/Docs/Assets/global/pinkbg1.png"
+                class="absolute top-20 rotate-180 left-0 max-w-[300px] w-full " alt="">
+
+
+            <div class="max-w-[1200px] w-full mx-auto z-20">
+                <h2 class="text-[#115934] md:text-[50px] relative text-[26px] leading-tight ">Is maintaining hospital
+                    facilities a challenge, leading to increased downtime?</h2>
+            </div>
+
+            <div
+                class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-10  myShadow md:text-[36px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col-reverse justify-between md:gap-2 gap-10">
+
+                <p class="max-w-[612px] w-full z-30"><span class="font-bold Urbanist">Easily manage facilities and
+                        assets</span> with mobile-enabled tracking, task management, and <span
+                        class="font-bold Urbanist">automated maintenance requests</span>.</p>
+                <img src="/hospital/Docs/Assets/global/section34.png" class="max-w-[388.88px] w-full" alt="">
+
+            </div>
+
+        </div>
+
+
+        <div class="md:pt-10 p-5 relative md:rounded-b-[4rem] bg-white">
+            <img src="/hospital/Docs/Assets/global/bluebg1.png"
+                class="absolute rotate-180 bottom-0 right-0 max-w-[300px] w-full " alt="">
+
+
+            <div class="max-w-[1200px] w-full mx-auto z-20">
+                <h2 class="text-[#115934] md:text-[50px] relative text-[26px] leading-tight ">Are doctors finding it
+                    difficult to manage patient referrals efficiently?</h2>
+            </div>
+
+            <div
+                class="max-w-[1200px] md:mt-10 mt-5 z-20 relative w-full mx-auto md:px-14 md:py-14 px-5 py-10  myShadow md:text-[36px] text-[22px] text-[#115934] Urbanist bg-white rounded-2xl flex items-center lg:flex-row flex-col-reverse justify-between md:gap-2 gap-10">
+
+                <p class="max-w-[612px] w-full z-30">Our Referral Management feature gives doctors <span
+                        class="font-bold Urbanist">comprehensive insights into patient referrals</span>, automating
+                    processes to reduce manual work and <span class="font-bold Urbanist">improve patient
+                        outcomes</span>.</p>
+                <img src="/hospital/Docs/Assets/global/section35.png" class="max-w-[388.88px] w-full" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="relative bg-[#f8f8f8] md:p-0 p-5">
+        <div class="max-w-[1320px] bg-[#115934] rounded-3xl w-full mx-auto px-5 md:py-12 py-6">
+            <h2 class="text-white lg:text-[60px] text-[36px] font-bold text-center pb-10">Core Features</h2>
+
+
+            <div class="grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 max-w-[1200px] mx-auto">
+
+                <div
+                    class="bg-white rounded-3xl md:px-10 px-5 md:py-16 py-10 flex flex-col items-center gap-5 justify-center text-center ">
+                    <img src="/hospital/Docs/Assets/global/festure1.png" class="md:max-w-[160px] max-w-[98.27px] w-full"
+                        alt="">
+                    <h2 class="text-[24px] text-[#115934] font-medium">Dynamic Queue</h2>
+                    <p class="md:text-[18px] text-[16px] text-[#16161A] ">ChupOnline's dynamic queue reduces wait times
+                        and enhances the patient experience.</p>
+                </div>
+                <div
+                    class="bg-white rounded-3xl md:px-10 px-5 md:py-16 py-10 flex flex-col items-center gap-5 justify-center text-center ">
+                    <img src="/hospital/Docs/Assets/global/feature2.png" class="md:max-w-[160px] max-w-[98.27px] w-full"
+                        alt="">
+                    <h2 class="text-[24px] text-[#115934] font-medium">Dynamic Queue</h2>
+                    <p class="md:text-[18px] text-[16px] text-[#16161A] ">ChupOnline's dynamic queue reduces wait times
+                        and enhances the patient experience.</p>
+                </div>
+                <div
+                    class="bg-white rounded-3xl md:px-10 px-5 md:py-16 py-10 flex flex-col items-center gap-5 justify-center text-center ">
+                    <img src="/hospital/Docs/Assets/global/feature3.png" class="md:max-w-[160px] max-w-[98.27px] w-full"
+                        alt="">
+                    <h2 class="text-[24px] text-[#115934] font-medium">Dynamic Queue</h2>
+                    <p class="md:text-[18px] text-[16px] text-[#16161A] ">ChupOnline's dynamic queue reduces wait times
+                        and enhances the patient experience.</p>
+                </div>
+                <div
+                    class="bg-white rounded-3xl md:px-10 px-5 md:py-16 py-10 flex flex-col items-center gap-5 justify-center text-center ">
+                    <img src="/hospital/Docs/Assets/global/feature4.png" class="md:max-w-[160px] max-w-[98.27px] w-full"
+                        alt="">
+                    <h2 class="text-[24px] text-[#115934] font-medium">Dynamic Queue</h2>
+                    <p class="md:text-[18px] text-[16px] text-[#16161A] ">ChupOnline's dynamic queue reduces wait times
+                        and enhances the patient experience.</p>
+                </div>
+                <div
+                    class="bg-white rounded-3xl md:px-10 px-5 md:py-16 py-10 flex flex-col items-center gap-5 justify-center text-center ">
+                    <img src="/hospital/Docs/Assets/global/feature5.png" class="md:max-w-[160px] max-w-[98.27px] w-full"
+                        alt="">
+                    <h2 class="text-[24px] text-[#115934] font-medium">Dynamic Queue</h2>
+                    <p class="md:text-[18px] text-[16px] text-[#16161A] ">ChupOnline's dynamic queue reduces wait times
+                        and enhances the patient experience.</p>
+                </div>
+                <div
+                    class="bg-white rounded-3xl md:px-10 px-5 md:py-16 py-10 flex flex-col items-center gap-5 justify-center text-center ">
+                    <img src="/hospital/Docs/Assets/global/feature6.png" class="md:max-w-[160px] max-w-[98.27px] w-full"
+                        alt="">
+                    <h2 class="text-[24px] text-[#115934] font-medium">Dynamic Queue</h2>
+                    <p class="md:text-[18px] text-[16px] text-[#16161A] ">ChupOnline's dynamic queue reduces wait times
+                        and enhances the patient experience.</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="relative bg-[#f8f8f8] md:py-16 py-10 px-5 ">
+
+        <img src="/hospital/Docs/Assets/global/allFeaturebg1.png" class="absolute top-0 left-0" alt="">
+        <img src="/hospital/Docs/Assets/global/allFeaturebg2.png" class="absolute top-0 right-0" alt="">
+        <img src="/hospital/Docs/Assets/global/allFeaturebg3.png" class="absolute bottom-20 left-0" alt="">
+        <img src="/hospital/Docs/Assets/global/allFeaturebg4.png" class="absolute bottom-0 right-0" alt="">
+
+        <div class="max-w-[1320px] relative  w-full mx-auto z-10">
+            <h2
+                class="text-[#115934] lg:text-[60px] z-20 text-[24px] md:pt-12 pt-6 font-bold text-center md:pb-10 pb-5 leading-tight">
+                All the Features You Need and More</h2>
+
+            <div
+                class="max-w-[1200px] w-full mx-auto grid z-30 relative lg:grid-cols-4 md:grid-cols-3 gap-4 grid-cols-2 md:mt-12 mt-8 pb-20">
+
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature1.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Outpatient
+                        Management</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature2.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Nursing &
+                        Wards</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature3.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Emergency
+                        Department</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature4.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Transport
+                        Management</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature5.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Registration
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature6.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Laboratory
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature7.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Reception
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature8.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Billings</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature9.png" class="md:max-w-[48px] max-w-[24px] w-full "
+                        alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Executive
+                        Information System</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature10.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Operation
+                        Theatre & Cath Lab</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature11.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Patient
+                        Feedback &
+                        Experience</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature12.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Security &
+                        User
+                        Access</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature13.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Financial
+                        Management</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature15.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Blood Bank
+                        Management</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature17.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Health
+                        Screening</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature18.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Inpatient
+                        Admission</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature19.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">
+                        Interoperability
+                        & HIE</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature20.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Treatment
+                        Room</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature21.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Radiology
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature22.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">General
+                        Affairs</p>
+                </div>
+                <div class="lg:block hidden"></div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature23.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Insurance
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center text-center bg-[#FFFFFF80] md:gap-5 gap-4 md:p-7 p-5 rounded-2xl myShadow">
+                    <img src="/hospital/Docs/Assets/global/allFeature24.png"
+                        class="md:max-w-[48px] max-w-[24px] w-full " alt="">
+                    <p class="text-[#16161A] md:text-[28px] text-[16px] font-medium Urbanist leading-tight">Triage</p>
+                </div>
+                <div class="lg:block hidden"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="relative bg-[#115934] rounded-[4rem] md:py-16 py-10 px-5 -mt-14 z-50">
+
+        <div class="max-w-[1200px] w-full mx-auto">
+            <h1 class="font-bold md:text-[60px] text-[24px] leading-tight text-white text-center ">
+                Unlock <span class="text-[#F26522]">greater efficiency</span> in your hospital by up to <span
+                    class="text-[#F26522]">90% with</span>
+            </h1>
+            <img src="/hospital/Docs/Assets/global/whiteLogo.svg"
+                class="md:max-w-[409.63px] mt-4 max-w-[235.19px] w-full mx-auto" alt="">
+            <button
+                class="bg-[#F26522] mx-auto mt-16 flex text-nowrap text-[#ffffff] px-6 py-2.5 w-[263px] md:h-[58px] h-[50] rounded-lg transition-all items-center justify-center gap-2 font-medium md:text-[20px] text-[14px]">
+                <img src="/hospital/Docs/Assets/global/whatsapp.svg" class="h-[20px] " alt="">
+                Start Consultation
+            </button>
+
+            <div class="flex flex-col gap-7 md:mt-16 md:pt-10 mt-10">
+
+                <div
+                    class="bg-[#ffffff] p-5 py-12 lg:p-24 md:p-14 flex lg:flex-row flex-col items-center lg:gap-16 gap-6 rounded-3xl">
+                    <img src="/hospital/Docs/Assets/global/greate1.png"
+                        class="lg:max-w-[300px] max-w-[159.57px] mx-auto w-full" alt="">
+                    <div class="md:text-start text-center">
+                        <h2
+                            class="lg:text-[44px] Urbanist text-[#0D0D0D] md:text-[22.01px] text-[20px] font-bold lg:pb-5 pb-2">
+                            Your All-in-One Healthcare Solution</h2>
+                        <p
+                            class="lg:text-[28px] Urbanist text-[#0D0D0DBF] md:text-[18.53px] text-[16px] lg:leading-tight">
+                            ChupHospital consolidates multiple systems into one platform, providing everything your
+                            hospital needs with 30+ modules.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#ffffff] p-5 py-12 lg:p-24 md:p-14 flex lg:flex-row flex-col items-center lg:gap-16 gap-6 rounded-3xl">
+                    <img src="/hospital/Docs/Assets/global/greate2.png"
+                        class="lg:max-w-[300px] max-w-[159.57px] mx-auto w-full" alt="">
+                    <div class="md:text-start text-center">
+                        <h2
+                            class="lg:text-[44px] Urbanist text-[#0D0D0D] md:text-[22.01px] text-[20px] font-bold lg:pb-5 pb-2">
+                            Tailored for Every Healthcare Provider</h2>
+                        <p
+                            class="lg:text-[28px] Urbanist text-[#0D0D0DBF] md:text-[18.53px] text-[16px] lg:leading-tight">
+                            ChupHospital enhances patient care and streamlines operations, perfect for clinics and
+                            hospitals of any size.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#ffffff] p-5 py-12 lg:p-24 md:p-14 flex lg:flex-row flex-col items-center lg:gap-16 gap-6 rounded-3xl">
+                    <img src="/hospital/Docs/Assets/global/greate3.png"
+                        class="lg:max-w-[300px] max-w-[159.57px] mx-auto w-full" alt="">
+                    <div class="md:text-start text-center">
+                        <h2
+                            class="lg:text-[44px] Urbanist text-[#0D0D0D] md:text-[22.01px] text-[20px] font-bold lg:pb-5 pb-2">
+                            Lower Costs, Higher Efficiency</h2>
+                        <p
+                            class="lg:text-[28px] Urbanist text-[#0D0D0DBF] md:text-[18.53px] text-[16px] lg:leading-tight">
+                            Streamline operations and cut costs with ChupHospital's efficient, cost-effective solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#ffffff] p-5 py-12 lg:p-24 md:p-14 flex lg:flex-row flex-col items-center lg:gap-16 gap-6 rounded-3xl">
+                    <img src="/hospital/Docs/Assets/global/greate4.png"
+                        class="lg:max-w-[300px] max-w-[159.57px] mx-auto w-full" alt="">
+                    <div class="md:text-start text-center">
+                        <h2
+                            class="lg:text-[44px] Urbanist text-[#0D0D0D] md:text-[22.01px] text-[20px] font-bold lg:pb-5 pb-2">
+                            Enhanced Patient Satisfaction</h2>
+                        <p
+                            class="lg:text-[28px] Urbanist text-[#0D0D0DBF] md:text-[18.53px] text-[16px] lg:leading-tight">
+                            Minimize wait times and improve patient experiences with our AI-powered tools, delivering
+                            seamless, integrated care.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#ffffff] p-5 py-12 lg:p-24 md:p-14 flex lg:flex-row flex-col items-center lg:gap-16 gap-6 rounded-3xl">
+                    <img src="/hospital/Docs/Assets/global/greate5.png"
+                        class="lg:max-w-[300px] max-w-[159.57px] mx-auto w-full" alt="">
+                    <div class="md:text-start text-center">
+                        <h2
+                            class="lg:text-[44px] Urbanist text-[#0D0D0D] md:text-[22.01px] text-[20px] font-bold lg:pb-5 pb-2">
+                            User-Friendly and Secure</h2>
+                        <p
+                            class="lg:text-[28px] Urbanist text-[#0D0D0DBF] md:text-[18.53px] text-[16px] lg:leading-tight">
+                            ChupHospital is user-friendly, requires minimal training, no special app, and provides
+                            strong security for sensitive data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-5 2xl:px-0 bg-[#f8f8f7] relative  md:py-16 py-10 -mt-10">
+        <img src="/hospital/Docs/Assets/global/faq1.png" class="absolute top-0 max-w-[300px] left-0" alt="">
+        <img src="/hospital/Docs/Assets/global/faq2.png" class="absolute bottom-0 right-0" alt="">
+
+        <div class=" max-w-7xl mx-auto relative z-20">
+
+            <h2
+                class="text-[#115934] lg:text-[60px] md:text-[50px] text-[32px] pt-16 md:leading-[78px] leading-[39px] font-bold w-full mx-auto lg:leading-[104px] text-center">
+                Frequently asked questions</h2>
+
+
+            <ul class="flex flex-col sm:mt-10 mt-6">
+                <li class="bg-white my-2 md:rounded-3xl rounded-xl overflow-hidden border shadow-lg"
+                    x-data="accordion(1)">
+                    <h2 @click="handleClick()" class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                        <span
+                            class="lg:text-[30px] Urbanist pl-2 md:text-[25px]  text-black text-[20px] font-medium">What
+                            is ChupHospital?</span>
+                        <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#343330] md:text-xl"
+                            :class="handleRotate()"></i>
+                    </h2>
+                    <div x-ref="tab" :style="handleToggle()"
+                        class=" overflow-hidden max-h-0  duration-500 transition-all">
+                        <p
+                            class="text-[#00000099] Urbanist bg-[#F8F8F8] md:text-[32px] text-[16px] mx-3 mb-3 p-3 rounded-xl">
+                            ChupHospital is a digital platform that streamlines hospital operations by automating
+                            workflows across departments, managing patient data, billing, inventory, and more for
+                            efficient management and care.</p>
+                    </div>
+                </li>
+                <li class="bg-white my-2 md:rounded-3xl rounded-xl overflow-hidden border shadow-lg"
+                    x-data="accordion(2)">
+                    <h2 @click="handleClick()" class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                        <span
+                            class="lg:text-[30px] Urbanist pl-2 md:text-[25px]  text-black text-[20px] font-medium">How
+                            does ChupHospital improve efficiency?</span>
+                        <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#343330] md:text-xl"
+                            :class="handleRotate()"></i>
+                    </h2>
+                    <div x-ref="tab" :style="handleToggle()"
+                        class=" overflow-hidden max-h-0  duration-500 transition-all">
+                        <p
+                            class="text-[#00000099] Urbanist bg-[#F8F8F8] md:text-[32px] text-[16px] mx-3 mb-3 p-3 rounded-xl">
+                            It reduces manual tasks, minimizes errors, and provides real-time data. Automation of tasks
+                            like registration, billing, and inventory tracking speeds up operations and enhances
+                            decision-making.</p>
+                    </div>
+                </li>
+                <li class="bg-white my-2 md:rounded-3xl rounded-xl overflow-hidden border shadow-lg"
+                    x-data="accordion(3)">
+                    <h2 @click="handleClick()" class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                        <span class="lg:text-[30px] Urbanist pl-2 md:text-[25px]  text-black text-[20px] font-medium">Is
+                            ChupHospital customizable?</span>
+                        <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#343330] md:text-xl"
+                            :class="handleRotate()"></i>
+                    </h2>
+                    <div x-ref="tab" :style="handleToggle()"
+                        class=" overflow-hidden max-h-0  duration-500 transition-all">
+                        <p
+                            class="text-[#00000099] Urbanist bg-[#F8F8F8] md:text-[32px] text-[16px] mx-3 mb-3 p-3 rounded-xl">
+                            Yes, ChupHospital offers 30+ modules to tailor the system to your hospital’s specific needs,
+                            ensuring smooth integration with existing workflows.</p>
+                    </div>
+                </li>
+                <li class="bg-white my-2 md:rounded-3xl rounded-xl overflow-hidden border shadow-lg"
+                    x-data="accordion(4)">
+                    <h2 @click="handleClick()" class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                        <span
+                            class="lg:text-[30px] Urbanist pl-2 md:text-[25px]  text-black text-[20px] font-medium">How
+                            easy is it to train staff?</span>
+                        <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#343330] md:text-xl"
+                            :class="handleRotate()"></i>
+                    </h2>
+                    <div x-ref="tab" :style="handleToggle()"
+                        class=" overflow-hidden max-h-0  duration-500 transition-all">
+                        <p
+                            class="text-[#00000099] Urbanist bg-[#F8F8F8] md:text-[32px] text-[16px] mx-3 mb-3 p-3 rounded-xl">
+                            ChupHospital’s user-friendly interface, along with comprehensive training and ongoing
+                            support, ensures quick staff adaptation.</p>
+                    </div>
+                </li>
+                <li class="bg-white my-2 md:rounded-3xl rounded-xl overflow-hidden border shadow-lg"
+                    x-data="accordion(5)">
+                    <h2 @click="handleClick()" class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                        <span
+                            class="lg:text-[30px] Urbanist pl-2 md:text-[25px]  text-black text-[20px] font-medium">How
+                            can I schedule a demo for ChupHospital?</span>
+                        <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#343330] md:text-xl"
+                            :class="handleRotate()"></i>
+                    </h2>
+                    <div x-ref="tab" :style="handleToggle()"
+                        class=" overflow-hidden max-h-0  duration-500 transition-all">
+                        <p
+                            class="text-[#00000099] Urbanist bg-[#F8F8F8] md:text-[32px] text-[16px] mx-3 mb-3 p-3 rounded-xl">
+                            You can schedule a personalized demo by filling out the form through our website or reach
+                            out to us via Whatsapp. We’ll walk you through the features and functionalities to show how
+                            ChupHospital can benefit your hospital.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="relative  bg-[#f8f8f8] pt-5 md:pt-16  px-3">
+
+        <img src="/hospital/Docs/Assets/global/seeOur1.png" class="absolute top-0 left-0" alt="">
+        <img src="/hospital/Docs/Assets/global/seeOur2.png" class="absolute bottom-0 right-0" alt="">
+
+
+        <div class="flex flex-col md:px-10 px-5 md:py-10 relative z-10 py-7 items-center rounded-3xl justify-center w-full max-w-[1320px] mx-auto bg-white">
+            <h2 class="lg:text-[48px] text-[#115934] text-[24px] text-center md:pb-16 pb-8  font-bold z-10">See Our <span
+                    class="text-[#F26522]">Recommended</span>
+                      Product</h2>
+    
+            <div
+                class="max-w-7xl z-20  w-full mx-auto grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  md:bg-[#f8f8f8] bg-white overflow-hidden rounded-2xl">
+                <div class="rounded-2xl  md:min-h-[333px] md:p-8 p-5 bg-[#115934] myShadow">
+                    <div class="flex md:flex-col flex-row items-center md:items-end gap-2 justify-between">
+                        <div class="">
+                            <img src="/hospital/Docs/Assets/global/Chup Online.svg"
+                                class="md:max-w-[306.45px] max-w-[180.3px] w-full md:mb-6 mb-3" alt="">
+                            <p class="text-white lg:text-[32px] text-[16px] lg:leading-[41.6px] leading-[20.8px]">Dynamic
+                                Queue and Appointment Automation</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="/index.html">
+                                <i
+                                    class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-white text-[#115934] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="border-[#cfd1d4]   bg-[#f8f8f8] md:border-r sm:border-b sm:rounded-t-none rounded-t-2xl mt-4 sm:mt-0">
+                    <div
+                        class="flex md:flex-col gap-2 justify-between md:min-h-[333px] md:p-8 p-5 flex-row items-center md:items-end ">
+                        <div class="">
+                            <img src="/hospital/Docs/Assets/global/Chuphospital.svg"
+                                class="md:max-w-[224.54px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p class="text-[#115934] lg:text-[24px] text-[16px] lg:leading-[31.2px] leading-[20.8px]">
+                                Next generation Hospital Management System</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#115934] text-[#ffffff] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[1px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div class=" border-[#cfd1d4] bg-[#f8f8f8] sm:border-b">
+                    <div
+                        class="flex md:flex-col flex-row items-center md:items-end gap-2 justify-between md:min-h-[333px] md:p-8 p-5">
+                        <div class="">
+                            <img src="/hospital/Docs/Assets/global/Chup clinic.svg"
+                                class="md:max-w-[224.54px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p class="text-[#115934] lg:text-[24px] text-[16px] lg:leading-[31.2px] leading-[20.8px]">
+                                AI-Powered Clinic Management System</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#115934] text-[#ffffff] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[1px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div class=" border-[#cfd1d4]  bg-[#f8f8f8] md:border-r md:border-b">
+                    <div
+                        class="flex md:flex-col flex-row items-center md:items-end gap-2 justify-between md:min-h-[333px] md:p-8 p-5">
+                        <div class="">
+                            <img src="/hospital/Docs/Assets/global/Chupwork.svg"
+                                class="md:max-w-[224.54px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p class="text-[#115934] lg:text-[24px] text-[16px] lg:leading-[31.2px] leading-[20.8px]">
+                                Dynamic Personal Appointment App</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#115934] text-[#ffffff] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[0.5px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div class=" border-[#cfd1d4]  bg-[#f8f8f8] md:border-r md:border-b sm:border-b">
+                    <div
+                        class="flex md:flex-col gap-2 justify-between md:min-h-[333px] md:p-8 p-5 flex-row items-center md:items-end">
+                        <div class="">
+                            <img src="/hospital/Docs/Assets/global/Logo Paperize.AI.svg"
+                                class="md:max-w-[162.44px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p class="text-[#115934] lg:text-[24px] text-[16px] lg:leading-[31.2px] leading-[20.8px]">
+                                AI Digitize Your Paper Document, including handwriting</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#115934] text-[#ffffff] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[0.5px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:border-b md:items-end border-[#cfd1d4] gap-2 justify-between md:min-h-[333px] md:p-8 p-5 bg-[#f8f8f8]">
+                    <div class="">
+                        <img src="/hospital/Docs/Assets/global/Logo MyMental.svg"
+                            class="md:max-w-[162.44px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                        <p class="text-[#115934] lg:text-[24px] text-[16px] lg:leading-[31.2px] leading-[20.8px]">
+                            Personalized Mental Health Platform</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <i
+                            class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#115934] text-[#ffffff] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+    <div class="bg-[#f8f8f8] p-5 md:pb-28 md:pt-20 pt-14 pb-8">
+
+        <div class="bg-[#115934] max-w-[1200px] flex md:flex-row flex-col items-center justify-between relative w-full rounded-3xl  mx-auto md:mt-48">
+            <div class="max-w-[745px] md:p-10 p-5">
+                <h2 class="text-white md:text-[36px] text-[24px] font-medium leading-tight">Be a Part of the Revolutionize Healthcare
+                    Provider with Chup for a smarter, more efficient and elevate your healthcare services</h2>
+                <button
+                    class="bg-[#F26522] flex text-nowrap text-[#ffffff] md:my-8 my-5 px-6 py-2.5 md:w-[454.14px] w-[240px] md:h-[70px] h-[40] rounded-2xl transition-all items-center justify-center md:gap-5 gap-2 font-semibold md:text-[22px] text-[12px]">
+                    <img src="/hospital/Docs/Assets/global/whatsapp.svg"
+                        class="md:h-[26.07px] h-[15.65px] font-semibold " alt="">
+                    Get a Free Consultation Today!
+                </button>
+                <img src="/hospital/Docs/Assets/global/whiteLogo.svg"
+                    class="md:max-w-[217.82px] max-w-[165.96px] w-full" alt="">
+            </div>
+            <img src="/hospital/Docs/Assets/global/beAPart.png" class="md:max-w-[447.83px] mt-5 md:mt-0 max-w-[198.33px] w-full md:absolute right-0 bottom-0" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="bg-[#115934] md:px-10 md:py-10 px-5 py-7 flex items-center justify-between gap-5 ">
+        <img src="/hospital/Docs/Assets/global/whiteLogo.svg" class="md:max-w-[269.68px] max-w-[89.96px] w-full" alt="">
+        <p class="text-white font-medium md:text-[14px] text-[10px]">© 2024 Chup Online Sdn Bhd. All rights reserved.</p>
+    </div>
+    
+</body>
+
+<script src=" https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('accordion', {
+            tab: 0
+        });
+
+        Alpine.data('accordion', (idx) => ({
+            init() {
+                this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    })
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
+</script>
+
+</html>
