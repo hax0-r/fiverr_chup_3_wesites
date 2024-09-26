@@ -145,3 +145,8 @@ button {
     border-radius: 12px;
     background: linear-gradient(100.89deg, rgb(250, 88, 83) 0.046%, rgb(244, 102, 146) 84.868%, rgb(255, 196, 68) 103.488%);
 }
+
+.bgBlur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
