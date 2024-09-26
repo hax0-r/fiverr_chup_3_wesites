@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.Urbanist    {
+    font-family: "Urbanist", system-ui;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #1e1c1c;
+    --white-color: #f7f7f7;
+}
+
+img,
+button {
+    user-select: none;
+}
+
+
+.fadeIn {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.fastFadeIn {
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fastFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.myShadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hoverMyShadow:hover {
+    box-shadow: rgba(0, 182, 122, 0.2) 0px 7px 29px 0px;
+}
+
+#dropDownNav {
+    div {
+        display: none;
+        opacity: 0;
+        top: 4.1rem;
+    }
+
+    &:hover {
+        div {
+            opacity: 1;
+            display: block;
+        }
+
+        i {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+
+.navUnderLine {
+    position: relative;
+    padding: 0 2px;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #115934;
+        transition: 200ms all;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.slidein {
+    animation: slideAnimation 1s ease var(--slidein-delay, 0) forwards;
+    /* slidein [--slidein-delay:300ms] opacity-0 */
+}
+
+@keyframes slideAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@media screen and (min-width:768px) {
+    .heroSection {
+        min-height: calc(100vh - 6rem);
+    }
+}
+
+/* ===================== */
+
+.navBtn {
+    border-radius: 12px;
+    background: linear-gradient(100.89deg, rgb(250, 88, 83) 0.389%, rgb(244, 102, 146) 84.423%, rgb(255, 196, 68) 102.869%);
+}
+
+@media screen and (min-width:768px) {
+    .heroSection {
+        min-height: calc(100vh - 64px);
+    }
+}
+
+.h1Top {
+    border-radius: 12px;
+    background: linear-gradient(100.89deg, rgb(250, 88, 83) 0.046%, rgb(244, 102, 146) 84.868%, rgb(255, 196, 68) 103.488%);
+}
+
+.bgBlur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}

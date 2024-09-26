@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Docs/Assets/global/favIcon.svg" type="image/x-icon">
+    <title>Chup! Hospital</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/work-Docs/Style/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <nav class="bg-[#ffffff]">
+        <div class="flex md:h-24 h-20 lg:px-16 md:px-8 px-4 items-center justify-between mx-auto">
+            <a href="/index.html">
+                <img src="/Clinic-Docs/Assets/logo.svg" alt="logo" class="md:h-[64px] h-[35px]">
+            </a>
+            <button
+                class="navBtn flex text-nowrap text-[#ffffff] px-6 py-2.5 md:w-[200px] w-[130px] md:h-[52px] h-[32] transition-all items-center justify-center md:gap-2 gap-1 font-medium md:text-[16px] text-[12px]">
+                <img src="/Clinic-Docs/Assets/whatsapp.svg" class="md:h-[20px] h-[16.67px] font-semibold " alt="">
+                WhatsApp Us
+            </button>
+        </div>
+    </nav> -->
+
+
+    <div class="">
+        <div class="px-5 2xl:px-0 bg-[#000000] relative  md:py-16 py-10 flex items-center justify-center">
+
+            <div class=" max-w-7xl mx-auto relative z-20">
+
+                <h2
+                    class="bg-gradient-to-r from-[#F966EA] via-[#F9E166] to-[#F9E166] inline-block text-transparent bg-clip-text lg:text-[45px] md:text-[50px] text-[30px] pt-16  w-full mx-auto">
+                    Popular Topics</h2>
+                <h2
+                    class="text-white lg:text-[64px] md:text-[50px] text-[30px] md:leading-[78px] leading-[39px] font-bold w-full mx-auto lg:leading-[104px]">
+                    Frequently asked questions</h2>
+
+
+                <ul class="flex flex-col sm:mt-10 mt-6">
+
+                    <li class="bg-black my-2  rounded-xl overflow-hidden border" x-data="accordion(1)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                            <span
+                                class="lg:text-[32px] Urbanist pl-2 md:text-[22px]  text-white text-[18px]">How does ChupWork help me manage meeting schedules more efficiently?</span>
+                            <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#ffffff] md:text-xl"
+                                :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class=" overflow-hidden max-h-0  duration-500 transition-all">
+                            <p class="text-[#ffffff] bg-[#30312a] Urbanist md:text-[24px] text-[16px] p-3 ">
+                                ChupWork's Auto Reschedule adjusts meeting times in real-time for delays, ensuring smooth & overlap-free scheduling.</p>
+                        </div>
+                    </li>
+
+                    <li class="bg-black my-2  rounded-xl overflow-hidden border" x-data="accordion(2)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                            <span
+                                class="lg:text-[32px] Urbanist pl-2 md:text-[22px]  text-white text-[18px]">Do all participants need to download the ChupWork app?</span>
+                            <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#ffffff] md:text-xl"
+                                :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class=" overflow-hidden max-h-0  duration-500 transition-all">
+                            <p class="text-[#ffffff] bg-[#30312a] Urbanist md:text-[24px] text-[16px] p-3 ">
+                                No, only the hosts needs to download the app. No app required for attendees.</p>
+                        </div>
+                    </li>
+
+                    <li class="bg-black my-2  rounded-xl overflow-hidden border" x-data="accordion(3)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                            <span
+                                class="lg:text-[32px] Urbanist pl-2 md:text-[22px]  text-white text-[18px]">What happens if one of my meetings runs longer than expected?</span>
+                            <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#ffffff] md:text-xl"
+                                :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class=" overflow-hidden max-h-0  duration-500 transition-all">
+                            <p class="text-[#ffffff] bg-[#30312a] Urbanist md:text-[24px] text-[16px] p-3 ">
+                                ChupWork automatically reschedules your meeting to the time you preferred. Keeping your schedule organized.</p>
+                        </div>
+                    </li>
+
+                    <li class="bg-black my-2  rounded-xl overflow-hidden border" x-data="accordion(4)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                            <span
+                                class="lg:text-[32px] Urbanist pl-2 md:text-[22px]  text-white text-[18px]">Can ChupWork adjust offline meetings based on traffic conditions?</span>
+                            <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#ffffff] md:text-xl"
+                                :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class=" overflow-hidden max-h-0  duration-500 transition-all">
+                            <p class="text-[#ffffff] bg-[#30312a] Urbanist md:text-[24px] text-[16px] p-3 ">
+                                ChupWork auto-adjusts offline meetings based on traffic conditions, rescheduling efficiently for delays.</p>
+                        </div>
+                    </li>
+
+                    <li class="bg-black my-2  rounded-xl overflow-hidden border" x-data="accordion(5)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center p-3 cursor-pointer">
+                            <span
+                                class="lg:text-[32px] Urbanist pl-2 md:text-[22px]  text-white text-[18px]">How does ChupWork simplify scheduling for multiple participants?</span>
+                            <i class="fa-solid fa-angle-down transition-all duration-500 mr-2 text-[#ffffff] md:text-xl"
+                                :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class=" overflow-hidden max-h-0  duration-500 transition-all">
+                            <p class="text-[#ffffff] bg-[#30312a] Urbanist md:text-[24px] text-[16px] p-3 ">
+                                ChupWork lets hosts share invitation to multiple people only with a single invite link through Whatsapp. No app required.</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="relative  bg-[#000000] pt-3 md:pt-12  px-3">
+
+        <div
+            class="flex flex-col md:px-10 px-5 md:py-10 relative z-10 py-7 items-center rounded-3xl justify-center w-full max-w-[1320px] mx-auto ">
+            <h2
+                class="lg:text-[64px] text-white text-[24px] text-center md:pb-16 pb-8  font-bold z-10">
+                See Our <span class="text-[#D4FB4F]">Recommended Product</span>
+            </h2>
+
+            <div
+                class="max-w-7xl z-20  w-full mx-auto grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  md:bg-[#000000] bg-transparent overflow-hidden rounded-2xl">
+                <div class="rounded-2xl rounded-br-none  md:min-h-[333px] md:p-8 p-5 bg-[#D4FB4F] ">
+                    <div class="flex md:flex-col flex-row items-center md:items-end gap-2 justify-between">
+                        <div class="">
+                            <img src="/work-Docs/Assets/Chup Online.svg"
+                                class="md:max-w-[306.45px] max-w-[180.3px] w-full md:mb-6 mb-3" alt="">
+                            <p
+                                class="text-black lg:text-[30px] font-medium text-[16px] lg:leading-[41.6px] leading-[20.8px]">
+                                Dynamic
+                                Queue and Appointment Automation</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="/index.html">
+                                <i
+                                    class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-black text-[#D4FB4F] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="border-[#cfd1d4]   bg-[#191919] md:border-r sm:border-b sm:rounded-t-none sm:rounded-tl-2xl rounded-t-2xl mt-4 sm:mt-0">
+                    <div
+                        class="flex md:flex-col gap-2 justify-between md:min-h-[333px] md:p-8 p-5 flex-row items-center md:items-end ">
+                        <div class="">
+                            <img src="/work-Docs/Assets/Chup clinic.svg"
+                                class="md:max-w-[224.54px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p
+                                class="text-[#ffffff] lg:text-[30px] font-medium text-[16px] lg:leading-[41.6px] leading-[20.8px]">
+                                AI-Powered Clinic Management System</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#D4FB4F] text-[#191919] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[1px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div class=" border-[#cfd1d4] bg-[#191919] sm:border-b">
+                    <div
+                        class="flex md:flex-col flex-row items-center md:items-end gap-2 justify-between md:min-h-[333px] md:p-8 p-5">
+                        <div class="">
+                            <img src="/work-Docs/Assets/Chuphospital.svg"
+                                class="md:max-w-[224.54px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p
+                                class="text-[#ffffff] lg:text-[30px] font-medium text-[16px] lg:leading-[41.6px] leading-[20.8px]">
+                                Next generation Hospital Management System
+                            </p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#D4FB4F] text-[#191919] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[1px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div class=" border-[#cfd1d4]  bg-[#191919] md:border-r md:border-b sm:rounded-tl-2xl">
+                    <div
+                        class="flex md:flex-col flex-row items-center md:items-end gap-2 justify-between md:min-h-[333px] md:p-8 p-5">
+                        <div class="">
+                            <img src="/work-Docs/Assets/Chupwork.svg"
+                                class="md:max-w-[224.54px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p
+                                class="text-[#ffffff] lg:text-[30px] font-medium text-[16px] lg:leading-[41.6px] leading-[20.8px]">
+                                Dynamic Personal Appointment App</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#D4FB4F] text-[#191919] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[0.5px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div class=" border-[#cfd1d4]  bg-[#191919] md:border-r md:border-b sm:border-b">
+                    <div
+                        class="flex md:flex-col gap-2 justify-between md:min-h-[333px] md:p-8 p-5 flex-row items-center md:items-end">
+                        <div class="">
+                            <img src="/work-Docs/Assets/Logo Paperize.AI.svg"
+                                class="md:max-w-[162.44px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                            <p
+                                class="text-[#ffffff] lg:text-[30px] font-medium text-[16px] lg:leading-[41.6px] leading-[20.8px]">
+                                AI Digitize Your Paper Document, including handwriting</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <i
+                                class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#D4FB4F] text-[#191919] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto h-[0.5px] bg-[#cfd1d4] sm:hidden"></div>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:border-b md:items-end border-[#cfd1d4] gap-2 justify-between md:min-h-[333px] md:p-8 p-5 bg-[#191919]">
+                    <div class="">
+                        <img src="/work-Docs/Assets/Logo MyMental.svg"
+                            class="md:max-w-[162.44px] max-w-[115.71px] w-full md:mb-6 mb-3" alt="">
+                        <p
+                            class="text-[#ffffff] lg:text-[30px] font-medium text-[16px] lg:leading-[41.6px] leading-[20.8px]">
+                            Personalized Mental Health Platform</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <i
+                            class="fa-solid fa-arrow-right cursor-pointer transition-all hover:scale-105 bg-[#D4FB4F] text-[#191919] md:text-2xl text-lg md:w-12 w-8 md:h-12 h-8 flex items-center justify-center rounded-full pt-[1px]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- <div class="bg-[#f4f8fb] md:py-16 py-10 p-5">
+
+        <div class="max-w-[1200px] w-full mx-auto">
+
+            <div class="md:p-10 relative p-5 navBtn rounded-xl overflow-hidden">
+                <img src="/Clinic-Docs/Assets/line.png"
+                    class="absolute right-0 md:max-w-[560px] md:block hidden max-w-[262.88px] w-full md:top-0 bottom-0"
+                    alt="">
+                <img src="/Clinic-Docs/Assets/resLine.png"
+                    class="absolute md:hidden right-0 md:max-w-[560px] max-w-[262.88px] w-full md:top-0 bottom-0"
+                    alt="">
+
+
+
+                <img src="/Clinic-Docs/Assets/whiteLogo.svg"
+                    class="md:max-w-[184.56px] md:mt-0 mt-5 relative z-20 max-w-[146.56px] w-full mb-8" alt="">
+
+                <h2
+                    class="text-white lg:text-[40px] z-20 max-w-[1015px] relative w-full md:text-[40px] text-[24px] leading-[31.2px] font-medium md:leading-[52px]">
+                    Easily access our intelligent Clinic Management solutions by reaching out Our WhatsApp.
+                </h2>
+
+                <div
+                    class="flex md:items-center relative z-20 md:flex-row flex-col justify-between md:gap-2 gap-6 md:mt-10 mt-6 md:pb-0 pb-28">
+                    <div class="flex items-center md:flex-row flex-col md:gap-6 gap-3 w-full">
+                        <a href="https://wa.me/60173756569" class="w-full md:w-auto">
+                            <button
+                                class="text-white md:w-auto w-full  bg-[#000000] flex md:py-[22px] py-5 rounded-2xl px-6 items-center gap-3 lg:text-[22px] md:text-[22px] text-[18px] font-semibold">
+                                <img src="/Clinic-Docs/Assets/whatsappWhite.svg" class="max-w-[26.67px] w-full" alt="">
+                                Whatsapp Us</button>
+                        </a>
+                        <a href="mailto:hello@chup.online" class="md:w-auto w-full">
+                            <div
+                                class="text-white md:w-auto w-full  bg-[#000000] flex md:py-1.5 py-3 font-semibold px-6 items-center rounded-2xl gap-4 lg:text-[22px] md:text-[22px] text-[18px] ">
+                                <img src="/Clinic-Docs/Assets/mail.svg" class="max-w-[26.67px] w-full" alt="">
+                                <div class="">
+                                    Email Us
+                                    <p class="lg:text-[19px] text-[14px] font-normal">hello@chup.online</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <div class="bg-[#000000] md:px-10 md:py-7 px-5 py-7 flex items-center justify-between gap-5 ">
+        <img src="/work-Docs/Assets/Chupwork.svg" class="md:max-w-[303.16px] max-w-[95.4px] w-full" alt="">
+        <p class="text-white font-medium md:text-[14px] text-[10px]">© 2024 Chup Online Sdn Bhd. All rights reserved.
+        </p>
+    </div>
+
+</body>
+
+<script src=" https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('accordion', {
+            tab: 0
+        });
+
+        Alpine.data('accordion', (idx) => ({
+            init() {
+                this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    })
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
+</script>
+
+</html>
