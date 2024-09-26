@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-.Urbanist    {
+.Urbanist {
     font-family: "Urbanist", system-ui;
 }
 
@@ -132,8 +132,27 @@ button {
 /* ===================== */
 
 .navBtn {
-    border-radius: 12px;
-    background: linear-gradient(100.89deg, rgb(250, 88, 83) 0.389%, rgb(244, 102, 146) 84.423%, rgb(255, 196, 68) 102.869%);
+    /* Button */
+    position: static;
+    width: 201px;
+    height: 52px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px 16px 32px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: linear-gradient(41.99deg, rgba(255, 255, 255, 0.2) 4.835%, rgba(0, 0, 0, 0.2) 95.165%), rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (min-width:768px) {
@@ -150,4 +169,19 @@ button {
 .bgBlur {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+}
+
+.schedulingBg{
+    background: url(/work-Docs/Assets/schedulingBg.jpeg) center;
+    background-size: cover;
+    position: relative;
+}
+.schedulingBg::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000d3;
+    top: 0;
+    left: 0;
 }
