@@ -185,3 +185,7 @@ button {
     top: 0;
     left: 0;
 }
+
+.dynamicBg{
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.7) 0%, rgba(0, 0, 0, 0.056) 100%);
+}
